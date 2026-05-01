@@ -1,662 +1,431 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply UnoCSS classes to the current slide
-class: text-center
-# https://sli.dev/features/drawing
+title: Percorso quinquennale — Esame di Stato 2025
+highlighter: shiki
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable Comark Syntax: https://comark.dev/syntax/markdown
-comark: true
-# duration of the presentation
-duration: 35min
+mdc: true
+fonts:
+  sans: 'DM Sans'
+  serif: 'Playfair Display'
+  mono: 'DM Mono'
 ---
 
-# Welcome to Slidev
+<div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
 
-Presentation slides for developers
-
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+<div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 text-center">
+  <div v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }" style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #9fe1cb; text-transform: uppercase;">
+    Liceo Scientifico · Piemonte · 2025
+  </div>
+  <h1 v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }" style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; line-height: 1.1; color: white;">
+    Cinque anni<br><em style="color: #9fe1cb">di curiosità.</em>
+  </h1>
+  <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 700 } }" style="font-size: 17px; color: rgba(255,255,255,0.55); max-width: 460px; font-weight: 300; line-height: 1.7;">
+    Un percorso scientifico vissuto senza smettere di fare domande.
+  </p>
 </div>
-
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
-</div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
----
-transition: fade-out
----
-
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
-
----
-transition: slide-up
-level: 2
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
-
-## Keyboard Shortcuts
-
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: two-cols
-layoutClass: gap-16
----
-
-# Table of contents
-
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc text-sm minDepth="1" maxDepth="2" />
 
 ---
 layout: image-right
-image: https://cover.sli.dev
+image: https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80
+transition: fade
 ---
 
-# Code
+<div class="flex flex-col justify-center h-full pr-6">
 
-Use code snippets and get the highlighting directly, and even types hover!
+<div v-motion :initial="{ opacity: 0, x: -20 }" :enter="{ opacity: 1, x: 0 }" style="font-family: 'DM Mono', monospace; font-size: 11px; color: #888; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem;">
+01 · Percorso di studi
+</div>
 
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
+# Scientifico —<br>ma non solo
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
+<div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
 
-doubled.value = 2
-```
+<ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Liceo scientifico tradizionale, Piemonte</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Materie scientifiche <em>e</em> umanistiche — la duplicità come metodo, non come problema</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Approfondimenti autonomi: filosofia, matematica, economia, chimica</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Informatica autodidatta — Linux dall'elementare, LaTeX dalle medie</span>
+  </li>
+</ul>
 
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
+<div v-click class="flex flex-wrap gap-2 mt-6">
+  <span style="font-family: monospace; font-size: 11px; background: #EAF3DE; color: #3B6D11; padding: 3px 10px; border-radius: 4px;">Matematica</span>
+  <span style="font-family: monospace; font-size: 11px; background: #EAF3DE; color: #3B6D11; padding: 3px 10px; border-radius: 4px;">Chimica</span>
+  <span style="font-family: monospace; font-size: 11px; background: #E6F1FB; color: #185FA5; padding: 3px 10px; border-radius: 4px;">Filosofia</span>
+  <span style="font-family: monospace; font-size: 11px; background: #E6F1FB; color: #185FA5; padding: 3px 10px; border-radius: 4px;">Fisica</span>
+  <span style="font-family: monospace; font-size: 11px; background: #F1EFE8; color: #5F5E5A; padding: 3px 10px; border-radius: 4px;">Economia</span>
+</div>
 
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
+</div>
 
 ---
-level: 2
+layout: image-left
+image: https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80
+transition: slide-up
 ---
 
-# Shiki Magic Move
+<div class="flex flex-col justify-center h-full pl-6">
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+<div style="font-family: 'DM Mono', monospace; font-size: 11px; color: #888; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem;">
+02 · Crescita personale
+</div>
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+# Come sono<br>cambiato
 
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
+<div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
+<ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span><strong>Pazienza intellettuale</strong> — non passo oltre senza capire davvero</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span><strong>Metodo trasversale</strong> — un bug e un problema di chimica si affrontano allo stesso modo</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span><strong>Autoformazione</strong> — studio per curiosità, non per obbligo</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span><strong>Problem solving</strong> — esercitato nel tempo libero, non solo a scuola</span>
+  </li>
+</ul>
 
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
+<div v-click style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
+  "Mi piace andare in fondo alle cose — anche quando non serve per il compito."
+</div>
 
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
+</div>
 
 ---
+transition: slide-up
+---
 
-# Components
+<div style="font-family: 'DM Mono', monospace; font-size: 11px; color: #888; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.5rem;">
+02 · Timeline
+</div>
 
-<div grid="~ cols-2 gap-4">
+<div class="grid grid-cols-4 gap-4 items-start mt-4">
+
+<div v-click style="background: #f8faf8; border-radius: 10px; padding: 16px; border-top: 3px solid #1D9E75;">
+  <div style="font-family: monospace; font-size: 10px; color: #1D9E75; margin-bottom: 6px;">MEDIE</div>
+  <div style="font-weight: 500; font-size: 14px; margin-bottom: 6px;">LaTeX + Linux</div>
+  <div style="font-size: 12px; color: #666; line-height: 1.5;">Tesina in LaTeX. Linux in uso quotidiano da prima ancora.</div>
+</div>
+
+<div v-click style="background: #f8f9fb; border-radius: 10px; padding: 16px; border-top: 3px solid #378ADD;">
+  <div style="font-family: monospace; font-size: 10px; color: #378ADD; margin-bottom: 6px;">ESTATE 2ª</div>
+  <div style="font-weight: 500; font-size: 14px; margin-bottom: 6px;">Stazione meteo</div>
+  <div style="font-size: 12px; color: #666; line-height: 1.5;">ESP32 + sensori T° e umidità. Dati visualizzati con R.</div>
+</div>
+
+<div v-click style="background: #faf9f8; border-radius: 10px; padding: 16px; border-top: 3px solid #BA7517;">
+  <div style="font-family: monospace; font-size: 10px; color: #BA7517; margin-bottom: 6px;">3ª LICEO</div>
+  <div style="font-weight: 500; font-size: 14px; margin-bottom: 6px;">Olimpiadi + B2</div>
+  <div style="font-size: 12px; color: #666; line-height: 1.5;">Chimica: fascia di merito regionale. B2 Cambridge in anticipo.</div>
+</div>
+
+<div v-click style="background: #f8f8fc; border-radius: 10px; padding: 16px; border-top: 3px solid #7F77DD;">
+  <div style="font-family: monospace; font-size: 10px; color: #7F77DD; margin-bottom: 6px;">4ª – 5ª</div>
+  <div style="font-weight: 500; font-size: 14px; margin-bottom: 6px;">SaaS B2B live</div>
+  <div style="font-size: 12px; color: #666; line-height: 1.5;">Pagamenti Stripe, DB Supabase, deploy Vercel. Utenti reali.</div>
+</div>
+
+</div>
+
+<div v-click class="mt-8 text-center" style="font-size: 13px; color: #aaa; font-family: monospace;">
+  ogni progetto è nato da una domanda, non da un compito
+</div>
+
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80
+transition: fade
+---
+
+<div class="flex flex-col justify-center h-full pr-6">
+
+<div style="font-family: 'DM Mono', monospace; font-size: 11px; color: #888; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem;">
+03 · Attività & Progetti
+</div>
+
+# Cose costruite<br>per curiosità
+
+<div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
+
+<div style="display: flex; flex-direction: column; gap: 8px;">
+
+  <div v-click style="padding: 10px 14px; background: rgba(29,158,117,0.08); border-radius: 6px; border-left: 2px solid #1D9E75; font-size: 14px;">
+    <span style="font-family: monospace; font-size: 10px; color: #1D9E75;">SaaS B2B</span><br>
+    <strong>grooming-pro.dog</strong> — gestionale per toelettatori
+  </div>
+
+  <div v-click style="padding: 10px 14px; background: rgba(55,138,221,0.08); border-radius: 6px; border-left: 2px solid #378ADD; font-size: 14px;">
+    <span style="font-family: monospace; font-size: 10px; color: #378ADD;">Embedded</span><br>
+    <strong>Stazione meteo ESP32</strong> — sensori + grafici R
+  </div>
+
+  <div v-click style="padding: 10px 14px; background: rgba(136,135,128,0.08); border-radius: 6px; border-left: 2px solid #888; font-size: 14px;">
+    <span style="font-family: monospace; font-size: 10px; color: #888;">GitHub</span><br>
+    Progetti embedded, siti, script di analisi dati
+  </div>
+
+  <div v-click style="padding: 10px 14px; background: rgba(136,135,128,0.08); border-radius: 6px; border-left: 2px solid #888; font-size: 14px;">
+    <span style="font-family: monospace; font-size: 10px; color: #888;">Tipografia</span><br>
+    <strong>LaTeX</strong> — dalla tesina delle medie in poi
+  </div>
+
+</div>
+
+</div>
+
+---
+transition: slide-up
+---
+
+<div style="font-family: 'DM Mono', monospace; font-size: 11px; color: #888; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem;">
+03 · Il progetto — grooming-pro.dog
+</div>
+
+<div class="grid grid-cols-2 gap-6 h-5/6">
+
+<div class="flex flex-col justify-start gap-4">
+
+  <div v-motion :initial="{ opacity: 0, x: -20 }" :enter="{ opacity: 1, x: 0 }">
+    <h2 style="font-size: 22px; margin-bottom: 0.5rem;">Un SaaS costruito da zero</h2>
+    <p style="font-size: 14px; color: #666; line-height: 1.7;">Gestionale B2B per toelettatori professionisti. Pagamenti reali, utenti reali, problemi reali.</p>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 6px;">
+    <div v-click style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
+      <span style="color: #1D9E75; font-size: 15px;">✓</span> <strong>Frontend</strong> — JS, deploy su Vercel
+    </div>
+    <div v-click style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
+      <span style="color: #1D9E75; font-size: 15px;">✓</span> <strong>Database</strong> — Supabase, autenticazione
+    </div>
+    <div v-click style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
+      <span style="color: #1D9E75; font-size: 15px;">✓</span> <strong>Pagamenti</strong> — integrazione Stripe reale
+    </div>
+    <div v-click style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0;">
+      <span style="color: #1D9E75; font-size: 15px;">✓</span> <strong>Dominio attivo</strong> — grooming-pro.dog
+    </div>
+  </div>
+
+  <div v-click style="background: #f8faf8; border-radius: 8px; padding: 12px; border-left: 2px solid #1D9E75; font-size: 13px; color: #555; font-style: italic; line-height: 1.6;">
+    Ho imparato più da un bug in produzione che da molte ore di studio teorico.
+  </div>
+
+</div>
+
+<div v-click style="border-radius: 10px; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 4px 20px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+  <div style="background: #f1f5f9; padding: 8px 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e2e8f0; flex-shrink: 0;">
+    <div style="display: flex; gap: 5px;">
+      <div style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444;"></div>
+      <div style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b;"></div>
+      <div style="width: 10px; height: 10px; border-radius: 50%; background: #10b981;"></div>
+    </div>
+    <span style="font-family: monospace; font-size: 11px; color: #94a3b8;">grooming-pro.dog</span>
+  </div>
+  <iframe
+    src="https://grooming-pro.dog"
+    style="width: 100%; flex: 1; border: none; background: white; min-height: 300px;"
+    loading="lazy"
+  ></iframe>
+</div>
+
+</div>
+
+---
+layout: image-left
+image: https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80
+transition: slide-up
+---
+
+<div class="flex flex-col justify-center h-full pl-6">
+
+<div style="font-family: 'DM Mono', monospace; font-size: 11px; color: #888; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem;">
+04 · PCTO
+</div>
+
+# Centro per l'Impiego<br>del Piemonte
+
+<div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
+
+<ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Ruolo: <strong>sviluppatore interno</strong></span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Raccolto requisiti, progettato e consegnato un gestionale dati</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Prima volta con utenti reali — non un professore, un ufficio</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Imparato a comunicare con chi non conosce il codice</span>
+  </li>
+</ul>
+
+<div v-click style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
+  "Un software è buono quando chi lo usa smette di pensarci."
+</div>
+
+</div>
+
+---
+transition: slide-up
+---
+
+<div style="font-family: 'DM Mono', monospace; font-size: 11px; color: #888; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.5rem;">
+05 · Competenze
+</div>
+
+<div class="grid grid-cols-2 gap-8">
+
 <div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>`, `<BlueSky/>`, and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
+<h3 style="font-size: 16px; font-weight: 500; margin-bottom: 1rem;">Tecniche</h3>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8faf8; border-radius: 6px; font-size: 13px;">
+    <div style="width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0;"></div>
+    Linux · Bash · CLI
+  </div>
+  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8faf8; border-radius: 6px; font-size: 13px;">
+    <div style="width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0;"></div>
+    Web full-stack — JS, Supabase, Vercel, Stripe
+  </div>
+  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8f9fb; border-radius: 6px; font-size: 13px;">
+    <div style="width: 7px; height: 7px; border-radius: 50%; background: #378ADD; flex-shrink: 0;"></div>
+    Embedded — ESP32, sensori, IoT
+  </div>
+  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8f9fb; border-radius: 6px; font-size: 13px;">
+    <div style="width: 7px; height: 7px; border-radius: 50%; background: #378ADD; flex-shrink: 0;"></div>
+    Analisi dati — R, visualizzazione
+  </div>
+  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #faf9f8; border-radius: 6px; font-size: 13px;">
+    <div style="width: 7px; height: 7px; border-radius: 50%; background: #BA7517; flex-shrink: 0;"></div>
+    LaTeX · Inglese B2 Cambridge
+  </div>
 </div>
+</div>
+
 <div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you press <kbd>space</kbd> or <kbd>right</kbd>, or click outside the slide on the right.
-
-```html
-<div v-click>This shows up when you trigger a click animation.</div>
-```
-
-</div>
-
-<p v-click>
-You can also add modifiers to change the animation:
-</p>
-
-<div class="grid gap-3 mt-4 text-sm" style="grid-template-columns: repeat(3, 1fr) 1.5fr 1fr">
-  <div v-after.up class="p-3 rounded border border-primary/20 bg-primary/10">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.up</div>
-    <div>Slide from bottom</div>
+<h3 style="font-size: 16px; font-weight: 500; margin-bottom: 1rem;">Trasversali</h3>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+  <div v-click style="padding: 10px 14px; background: #f8faf8; border-radius: 6px; border-left: 2px solid #1D9E75;">
+    <div style="font-weight: 500; font-size: 13px; margin-bottom: 2px;">Problem solving</div>
+    <div style="font-size: 12px; color: #666;">Esercitato nel tempo libero, non solo a scuola</div>
   </div>
-  <div v-click.fade-in class="p-3 rounded border border-primary/30 bg-primary/15">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade-in</div>
-    <div>Fade in</div>
+  <div v-click style="padding: 10px 14px; background: #f8f9fb; border-radius: 6px; border-left: 2px solid #378ADD;">
+    <div style="font-weight: 500; font-size: 13px; margin-bottom: 2px;">Autoformazione</div>
+    <div style="font-size: 12px; color: #666;">Studio per curiosità — economia, filosofia, codice</div>
   </div>
-  <div v-click.fade class="p-3 rounded border border-primary/40 bg-primary/20">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade</div>
-    <div>Dim (0.5 opacity)</div>
+  <div v-click style="padding: 10px 14px; background: #faf9f8; border-radius: 6px; border-left: 2px solid #BA7517;">
+    <div style="font-weight: 500; font-size: 13px; margin-bottom: 2px;">Gestione progetti</div>
+    <div style="font-size: 12px; color: #666;">Dall'idea alla consegna, in autonomia</div>
   </div>
-  <div v-click.fade.right.scale class="p-3 rounded border border-primary/50 bg-primary/25">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade.right.scale</div>
-    <div>Composed</div>
-  </div>
-  <div v-click.none class="p-3 rounded border border-primary/60 bg-primary/30">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.none</div>
-    <div>No transition</div>
+  <div v-click style="padding: 10px 14px; background: #f8f8fc; border-radius: 6px; border-left: 2px solid #7F77DD;">
+    <div style="font-weight: 500; font-size: 13px; margin-bottom: 2px;">Comunicazione tecnica</div>
+    <div style="font-size: 12px; color: #666;">Tradurre il codice per chi non lo conosce</div>
   </div>
 </div>
-
-<v-click>
-
-The <span v-mark.red="7"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="8">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div v-click mt-12>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
+</div>
 
 </div>
 
 ---
+layout: image-right
+image: https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80
+transition: fade
+---
 
-# Motions
+<div class="flex flex-col justify-center h-full pr-6">
 
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
+<div style="font-family: 'DM Mono', monospace; font-size: 11px; color: #888; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem;">
+06 · Orientamento
 </div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
+# Matematica<br>per l'ingegneria
 
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
+<div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
 
-[Learn more](https://sli.dev/guide/animations.html#motion)
+<ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span><strong>Politecnico di Torino</strong> — Matematica per l'ingegneria</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Non il percorso preferito — quello che lascia più <strong>libertà futura</strong></span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>Biologia, economia, sistemi complessi: serve un linguaggio formale preciso</span>
+  </li>
+  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+    <span style="color: #1D9E75; margin-top: 2px;">→</span>
+    <span>B2 Cambridge conseguito in 3ª — requisito soddisfatto con anticipo</span>
+  </li>
+</ul>
 
+<div v-click style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
+  "Non so ancora esattamente cosa farò. Mi sembra una cosa buona."
 </div>
 
----
-
-# $\LaTeX$
-
-$\LaTeX$ is supported out-of-box. Powered by [$\KaTeX$](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
 </div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 634,98,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="627,332,261,_,12">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
 
 ---
 layout: center
 class: text-center
+transition: fade
 ---
 
-# Learn More
+<div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<div class="relative z-10 flex flex-col items-center justify-center h-full gap-6">
 
-<PoweredBySlidev mt-10 />
+<div v-motion :initial="{ opacity: 0, scale: 0.9 }" :enter="{ opacity: 1, scale: 1, transition: { delay: 200 } }" style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #9fe1cb; text-transform: uppercase;">
+Grazie
+</div>
+
+<h2 v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 400 } }" style="font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 400; line-height: 1.2; color: white;">
+  Cinque anni di domande.<br>
+  <em style="color: #9fe1cb">Ancora tante da fare.</em>
+</h2>
+
+<div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 800 } }" class="flex gap-10 mt-4 flex-wrap justify-center">
+  <div style="text-align: center;">
+    <div style="font-family: monospace; font-size: 10px; color: #9fe1cb; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px;">Progetto live</div>
+    <div style="color: white; font-size: 15px;">grooming-pro.dog</div>
+  </div>
+  <div style="width: 1px; background: rgba(255,255,255,0.15);"></div>
+  <div style="text-align: center;">
+    <div style="font-family: monospace; font-size: 10px; color: #9fe1cb; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px;">Certificazione</div>
+    <div style="color: white; font-size: 15px;">Cambridge B2</div>
+  </div>
+  <div style="width: 1px; background: rgba(255,255,255,0.15);"></div>
+  <div style="text-align: center;">
+    <div style="font-family: monospace; font-size: 10px; color: #9fe1cb; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px;">Prossimo passo</div>
+    <div style="color: white; font-size: 15px;">Politecnico di Torino</div>
+  </div>
+</div>
+
+</div>
