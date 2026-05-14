@@ -15,17 +15,46 @@ fonts:
 <div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
 
 <div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 text-center">
-  <div v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }" style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #9fe1cb; text-transform: uppercase;">
-    Liceo Scientifico · Piemonte · 2025
+  <div v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }" style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #FFFFFF; text-transform: uppercase;">
+    VB · Istituto Maria Immacolata · 2025
   </div>
-  <h1 v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }" style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; line-height: 1.1; color: white;">
+  <h1 v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }" style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; line-height: 1.1; color: white;">
     Cinque anni<br><em style="color: #9fe1cb">di curiosità.</em>
   </h1>
+  <div v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }" style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #9fe1cb; text-transform: uppercase;">
+    Ilir lika
+  </div>
   <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 700 } }" style="font-size: 17px; color: rgba(255,255,255,0.55); max-width: 460px; font-weight: 300; line-height: 1.7;">
     Un percorso scientifico vissuto senza smettere di fare domande.
   </p>
 </div>
 
+
+---
+
+<div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 text-center">
+
+<h1 v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
+  style="font-family: 'Playfair Display', serif; font-size: 72px; font-weight: 400; color: white;">
+  <em>Studio</em>
+</h1>
+
+<div v-click
+  style="font-size: 18px; color: rgba(255,255,255,0.6); border: 1px solid rgba(159,225,203,0.3); border-radius: 10px; padding: 14px 28px; line-height: 1.9; font-weight: 300;">
+  dal lat. <span style="color:#9fe1cb">studium</span>, der. di <span style="color:#9fe1cb">studēre</span><br>
+  «aspirare a qualche cosa, applicarsi attivamente»
+</div>
+
+<p v-click
+  style="font-size: 18px; color: rgba(255,255,255,0.55); line-height: 2; font-weight: 300;">
+  applicazione · cura · diligenza · impegno · amore ·
+  <span v-mark="{ at: 3, color: '#9fe1cb', type: 'circle' }">passione</span>
+  · entusiasmo · zelo
+</p>
+
+</div>
 ---
 layout: image-right
 image: https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80
@@ -43,25 +72,25 @@ transition: fade
 <div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
 
 <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Liceo scientifico tradizionale, Piemonte</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Materie scientifiche <em>e</em> umanistiche — la duplicità come metodo, non come problema</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Approfondimenti autonomi: filosofia, matematica, economia, chimica</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Informatica autodidatta — Linux dall'elementare, LaTeX dalle medie</span>
   </li>
 </ul>
 
-<div v-click class="flex flex-wrap gap-2 mt-6">
+<div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" class="flex flex-wrap gap-2 mt-6">
   <span style="font-family: monospace; font-size: 11px; background: #EAF3DE; color: #3B6D11; padding: 3px 10px; border-radius: 4px;">Matematica</span>
   <span style="font-family: monospace; font-size: 11px; background: #EAF3DE; color: #3B6D11; padding: 3px 10px; border-radius: 4px;">Chimica</span>
   <span style="font-family: monospace; font-size: 11px; background: #E6F1FB; color: #185FA5; padding: 3px 10px; border-radius: 4px;">Filosofia</span>
@@ -88,25 +117,25 @@ transition: slide-up
 <div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
 
 <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span><strong>Pazienza intellettuale</strong> — non passo oltre senza capire davvero</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span><strong>Metodo trasversale</strong> — un bug e un problema di chimica si affrontano allo stesso modo</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span><strong>Autoformazione</strong> — studio per curiosità, non per obbligo</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span><strong>Problem solving</strong> — esercitato nel tempo libero, non solo a scuola</span>
   </li>
 </ul>
 
-<div v-click style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
+<div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
   "Mi piace andare in fondo alle cose — anche quando non serve per il compito."
 </div>
 
@@ -120,36 +149,32 @@ transition: slide-up
 02 · Timeline
 </div>
 
-<div class="grid grid-cols-4 gap-4 items-start mt-4">
+<div class="grid grid-cols-2 gap-6 mt-4" style="height: 75%;">
 
-<div v-click style="background: #f8faf8; border-radius: 10px; padding: 16px; border-top: 3px solid #1D9E75;">
-  <div style="font-family: monospace; font-size: 10px; color: #1D9E75; margin-bottom: 6px;">MEDIE</div>
-  <div style="font-weight: 500; font-size: 14px; margin-bottom: 6px;">LaTeX + Linux</div>
-  <div style="font-size: 12px; color: #666; line-height: 1.5;">Tesina in LaTeX. Linux in uso quotidiano da prima ancora.</div>
+<div style="background: #f8faf8; border-radius: 14px; padding: 28px; border-top: 4px solid #1D9E75; display: flex; flex-direction: column; justify-content: center;">
+  <div style="font-family: monospace; font-size: 12px; color: #1D9E75; margin-bottom: 10px; letter-spacing: 0.08em;">SCUOLE MEDIE</div>
+  <div style="font-weight: 600; font-size: 20px; margin-bottom: 10px;">LaTeX + Linux</div>
+  <div style="font-size: 14px; color: #555; line-height: 1.6;">Tesina scritta in LaTeX. Linux già in uso quotidiano — non era richiesto, era il modo giusto di fare le cose.</div>
 </div>
 
-<div v-click style="background: #f8f9fb; border-radius: 10px; padding: 16px; border-top: 3px solid #378ADD;">
-  <div style="font-family: monospace; font-size: 10px; color: #378ADD; margin-bottom: 6px;">ESTATE 2ª</div>
-  <div style="font-weight: 500; font-size: 14px; margin-bottom: 6px;">Stazione meteo</div>
-  <div style="font-size: 12px; color: #666; line-height: 1.5;">ESP32 + sensori T° e umidità. Dati visualizzati con R.</div>
+<div style="background: #f8f9fb; border-radius: 14px; padding: 28px; border-top: 4px solid #378ADD; display: flex; flex-direction: column; justify-content: center;">
+  <div style="font-family: monospace; font-size: 12px; color: #378ADD; margin-bottom: 10px; letter-spacing: 0.08em;">ESTATE DOPO LA 2ª</div>
+  <div style="font-weight: 600; font-size: 20px; margin-bottom: 10px;">Stazione meteo ESP32</div>
+  <div style="font-size: 14px; color: #555; line-height: 1.6;">Sensori di temperatura e umidità, logging dei dati, grafici visualizzati con R. Nata per un compito di scienze.</div>
 </div>
 
-<div v-click style="background: #faf9f8; border-radius: 10px; padding: 16px; border-top: 3px solid #BA7517;">
-  <div style="font-family: monospace; font-size: 10px; color: #BA7517; margin-bottom: 6px;">3ª LICEO</div>
-  <div style="font-weight: 500; font-size: 14px; margin-bottom: 6px;">Olimpiadi + B2</div>
-  <div style="font-size: 12px; color: #666; line-height: 1.5;">Chimica: fascia di merito regionale. B2 Cambridge in anticipo.</div>
+<div style="background: #faf9f8; border-radius: 14px; padding: 28px; border-top: 4px solid #BA7517; display: flex; flex-direction: column; justify-content: center;">
+  <div style="font-family: monospace; font-size: 12px; color: #BA7517; margin-bottom: 10px; letter-spacing: 0.08em;">3ª LICEO</div>
+  <div style="font-weight: 600; font-size: 20px; margin-bottom: 10px;">Olimpiadi di Chimica · B2</div>
+  <div style="font-size: 14px; color: #555; line-height: 1.6;">Fascia di merito regionale (Piemonte e V.d.A.). Certificazione Cambridge conseguita con anticipo.</div>
 </div>
 
-<div v-click style="background: #f8f8fc; border-radius: 10px; padding: 16px; border-top: 3px solid #7F77DD;">
-  <div style="font-family: monospace; font-size: 10px; color: #7F77DD; margin-bottom: 6px;">4ª – 5ª</div>
-  <div style="font-weight: 500; font-size: 14px; margin-bottom: 6px;">SaaS B2B live</div>
-  <div style="font-size: 12px; color: #666; line-height: 1.5;">Pagamenti Stripe, DB Supabase, deploy Vercel. Utenti reali.</div>
+<div style="background: #f8f8fc; border-radius: 14px; padding: 28px; border-top: 4px solid #7F77DD; display: flex; flex-direction: column; justify-content: center;">
+  <div style="font-family: monospace; font-size: 12px; color: #7F77DD; margin-bottom: 10px; letter-spacing: 0.08em;">4ª – 5ª LICEO</div>
+  <div style="font-weight: 600; font-size: 20px; margin-bottom: 10px;">SaaS B2B live</div>
+  <div style="font-size: 14px; color: #555; line-height: 1.6;">Pagamenti Stripe, database Supabase, deploy Vercel. Primo prodotto con utenti e pagamenti reali.</div>
 </div>
 
-</div>
-
-<div v-click class="mt-8 text-center" style="font-size: 13px; color: #aaa; font-family: monospace;">
-  ogni progetto è nato da una domanda, non da un compito
 </div>
 
 ---
@@ -170,22 +195,22 @@ transition: fade
 
 <div style="display: flex; flex-direction: column; gap: 8px;">
 
-  <div v-click style="padding: 10px 14px; background: rgba(29,158,117,0.08); border-radius: 6px; border-left: 2px solid #1D9E75; font-size: 14px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="padding: 10px 14px; background: rgba(29,158,117,0.08); border-radius: 6px; border-left: 2px solid #1D9E75; font-size: 14px;">
     <span style="font-family: monospace; font-size: 10px; color: #1D9E75;">SaaS B2B</span><br>
     <strong>grooming-pro.dog</strong> — gestionale per toelettatori
   </div>
 
-  <div v-click style="padding: 10px 14px; background: rgba(55,138,221,0.08); border-radius: 6px; border-left: 2px solid #378ADD; font-size: 14px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="padding: 10px 14px; background: rgba(55,138,221,0.08); border-radius: 6px; border-left: 2px solid #378ADD; font-size: 14px;">
     <span style="font-family: monospace; font-size: 10px; color: #378ADD;">Embedded</span><br>
     <strong>Stazione meteo ESP32</strong> — sensori + grafici R
   </div>
 
-  <div v-click style="padding: 10px 14px; background: rgba(136,135,128,0.08); border-radius: 6px; border-left: 2px solid #888; font-size: 14px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="padding: 10px 14px; background: rgba(136,135,128,0.08); border-radius: 6px; border-left: 2px solid #888; font-size: 14px;">
     <span style="font-family: monospace; font-size: 10px; color: #888;">GitHub</span><br>
     Progetti embedded, siti, script di analisi dati
   </div>
 
-  <div v-click style="padding: 10px 14px; background: rgba(136,135,128,0.08); border-radius: 6px; border-left: 2px solid #888; font-size: 14px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="padding: 10px 14px; background: rgba(136,135,128,0.08); border-radius: 6px; border-left: 2px solid #888; font-size: 14px;">
     <span style="font-family: monospace; font-size: 10px; color: #888;">Tipografia</span><br>
     <strong>LaTeX</strong> — dalla tesina delle medie in poi
   </div>
@@ -212,27 +237,27 @@ transition: slide-up
   </div>
 
   <div style="display: flex; flex-direction: column; gap: 6px;">
-    <div v-click style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
+    <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
       <span style="color: #1D9E75; font-size: 15px;">✓</span> <strong>Frontend</strong> — JS, deploy su Vercel
     </div>
-    <div v-click style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
+    <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
       <span style="color: #1D9E75; font-size: 15px;">✓</span> <strong>Database</strong> — Supabase, autenticazione
     </div>
-    <div v-click style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
+    <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0; border-bottom: 0.5px solid #eee;">
       <span style="color: #1D9E75; font-size: 15px;">✓</span> <strong>Pagamenti</strong> — integrazione Stripe reale
     </div>
-    <div v-click style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0;">
+    <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 7px 0;">
       <span style="color: #1D9E75; font-size: 15px;">✓</span> <strong>Dominio attivo</strong> — grooming-pro.dog
     </div>
   </div>
 
-  <div v-click style="background: #f8faf8; border-radius: 8px; padding: 12px; border-left: 2px solid #1D9E75; font-size: 13px; color: #555; font-style: italic; line-height: 1.6;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="background: #f8faf8; border-radius: 8px; padding: 12px; border-left: 2px solid #1D9E75; font-size: 13px; color: #555; font-style: italic; line-height: 1.6;">
     Ho imparato più da un bug in produzione che da molte ore di studio teorico.
   </div>
 
 </div>
 
-<div v-click style="border-radius: 10px; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 4px 20px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+<div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="border-radius: 10px; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 4px 20px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
   <div style="background: #f1f5f9; padding: 8px 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #e2e8f0; flex-shrink: 0;">
     <div style="display: flex; gap: 5px;">
       <div style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444;"></div>
@@ -267,25 +292,25 @@ transition: slide-up
 <div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
 
 <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Ruolo: <strong>sviluppatore interno</strong></span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Raccolto requisiti, progettato e consegnato un gestionale dati</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Prima volta con utenti reali — non un professore, un ufficio</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Imparato a comunicare con chi non conosce il codice</span>
   </li>
 </ul>
 
-<div v-click style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
+<div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
   "Un software è buono quando chi lo usa smette di pensarci."
 </div>
 
@@ -304,23 +329,23 @@ transition: slide-up
 <div>
 <h3 style="font-size: 16px; font-weight: 500; margin-bottom: 1rem;">Tecniche</h3>
 <div style="display: flex; flex-direction: column; gap: 6px;">
-  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8faf8; border-radius: 6px; font-size: 13px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8faf8; border-radius: 6px; font-size: 13px;">
     <div style="width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0;"></div>
     Linux · Bash · CLI
   </div>
-  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8faf8; border-radius: 6px; font-size: 13px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8faf8; border-radius: 6px; font-size: 13px;">
     <div style="width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0;"></div>
     Web full-stack — JS, Supabase, Vercel, Stripe
   </div>
-  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8f9fb; border-radius: 6px; font-size: 13px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8f9fb; border-radius: 6px; font-size: 13px;">
     <div style="width: 7px; height: 7px; border-radius: 50%; background: #378ADD; flex-shrink: 0;"></div>
     Embedded — ESP32, sensori, IoT
   </div>
-  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8f9fb; border-radius: 6px; font-size: 13px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #f8f9fb; border-radius: 6px; font-size: 13px;">
     <div style="width: 7px; height: 7px; border-radius: 50%; background: #378ADD; flex-shrink: 0;"></div>
     Analisi dati — R, visualizzazione
   </div>
-  <div v-click style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #faf9f8; border-radius: 6px; font-size: 13px;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #faf9f8; border-radius: 6px; font-size: 13px;">
     <div style="width: 7px; height: 7px; border-radius: 50%; background: #BA7517; flex-shrink: 0;"></div>
     LaTeX · Inglese B2 Cambridge
   </div>
@@ -330,19 +355,19 @@ transition: slide-up
 <div>
 <h3 style="font-size: 16px; font-weight: 500; margin-bottom: 1rem;">Trasversali</h3>
 <div style="display: flex; flex-direction: column; gap: 6px;">
-  <div v-click style="padding: 10px 14px; background: #f8faf8; border-radius: 6px; border-left: 2px solid #1D9E75;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="padding: 10px 14px; background: #f8faf8; border-radius: 6px; border-left: 2px solid #1D9E75;">
     <div style="font-weight: 500; font-size: 13px; margin-bottom: 2px;">Problem solving</div>
     <div style="font-size: 12px; color: #666;">Esercitato nel tempo libero, non solo a scuola</div>
   </div>
-  <div v-click style="padding: 10px 14px; background: #f8f9fb; border-radius: 6px; border-left: 2px solid #378ADD;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="padding: 10px 14px; background: #f8f9fb; border-radius: 6px; border-left: 2px solid #378ADD;">
     <div style="font-weight: 500; font-size: 13px; margin-bottom: 2px;">Autoformazione</div>
     <div style="font-size: 12px; color: #666;">Studio per curiosità — economia, filosofia, codice</div>
   </div>
-  <div v-click style="padding: 10px 14px; background: #faf9f8; border-radius: 6px; border-left: 2px solid #BA7517;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="padding: 10px 14px; background: #faf9f8; border-radius: 6px; border-left: 2px solid #BA7517;">
     <div style="font-weight: 500; font-size: 13px; margin-bottom: 2px;">Gestione progetti</div>
     <div style="font-size: 12px; color: #666;">Dall'idea alla consegna, in autonomia</div>
   </div>
-  <div v-click style="padding: 10px 14px; background: #f8f8fc; border-radius: 6px; border-left: 2px solid #7F77DD;">
+  <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="padding: 10px 14px; background: #f8f8fc; border-radius: 6px; border-left: 2px solid #7F77DD;">
     <div style="font-weight: 500; font-size: 13px; margin-bottom: 2px;">Comunicazione tecnica</div>
     <div style="font-size: 12px; color: #666;">Tradurre il codice per chi non lo conosce</div>
   </div>
@@ -368,25 +393,25 @@ transition: fade
 <div style="width: 32px; height: 2px; background: #1D9E75; margin: 0.75rem 0 1.25rem;"></div>
 
 <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span><strong>Politecnico di Torino</strong> — Matematica per l'ingegneria</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Non il percorso preferito — quello che lascia più <strong>libertà futura</strong></span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>Biologia, economia, sistemi complessi: serve un linguaggio formale preciso</span>
   </li>
-  <li v-click style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
+  <li v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="display: flex; align-items: flex-start; gap: 10px; font-size: 15px;">
     <span style="color: #1D9E75; margin-top: 2px;">→</span>
     <span>B2 Cambridge conseguito in 3ª — requisito soddisfatto con anticipo</span>
   </li>
 </ul>
 
-<div v-click style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
+<div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" style="border-left: 2px solid #1D9E75; padding-left: 1rem; margin-top: 1.5rem; font-style: italic; color: #666; font-size: 14px; line-height: 1.7;">
   "Non so ancora esattamente cosa farò. Mi sembra una cosa buona."
 </div>
 
