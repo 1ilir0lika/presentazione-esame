@@ -16,7 +16,7 @@ fonts:
 
 <div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 text-center">
   <div v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }" style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #FFFFFF; text-transform: uppercase;">
-    VB · Istituto Maria Immacolata · 2025
+    VB · Istituto Maria Immacolata · 2026
   </div>
   <h1 v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }" style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; line-height: 1.1; color: white;">
     Cinque anni<br><em style="color: #9fe1cb">di curiosità.</em>
@@ -142,7 +142,6 @@ onMounted(async () => {
 })
 </script>
 ---
----
 
 <div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
 <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=1280&q=80'); background-size: cover; background-position: center; opacity: 0.15;"></div>
@@ -186,4 +185,72 @@ onMounted(async () => {
   } catch (e) {}
 })
 </script>
+---
+
+<div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
+<div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=1280&q=80'); background-size: cover; background-position: center; opacity: 0.18;"></div>
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 text-center">
+
+<div v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
+  style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: rgba(159,225,203,0.6); text-transform: uppercase;">
+  Stage della Matematica · Bardonecchia
+</div>
+
+<h1 v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }"
+  style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; color: white; line-height: 1.1;">
+  <em style="color: #9fe1cb">Matematica.</em>
+</h1>
+
+<p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 500 } }"
+  style="font-size: 17px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.8; max-width: 480px;">
+  Tre anni di seguito sulle Alpi —<br>tra dimostrazioni, problemi aperti e neve.
+</p>
+
+<div v-click style="display: flex; gap: 20px; margin-top: 8px;">
+  <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
+    <div style="color: #9fe1cb; font-size: 36px; font-weight: 400;">3</div>
+    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">anni consecutivi</div>
+  </div>
+  <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
+    <div style="color: #9fe1cb; font-size: 36px; font-weight: 400;">1312</div>
+    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">metri · Alta Val di Susa</div>
+  </div>
+</div>
+
+</div>
+---
+
+<div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
+<div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1280&q=80'); background-size: cover; background-position: center; opacity: 0.18;"></div>
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 text-center">
+
+<div v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
+  style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: rgba(159,225,203,0.6); text-transform: uppercase;">
+  Olimpiadi della Chimica · Piemonte
+</div>
+
+<h1 v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }"
+  style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; color: white; line-height: 1.1;">
+  <em style="color: #9fe1cb">Chimica.</em>
+</h1>
+
+<p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 500 } }"
+  style="font-size: 17px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.8; max-width: 480px;">
+  Selezionato tra i migliori studenti del Piemonte<br>nella competizione nazionale.
+</p>
+
+<div v-click style="display: flex; gap: 20px; margin-top: 8px;">
+  <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
+    <div style="color: #9fe1cb; font-size: 36px; font-weight: 400;">14°</div>
+    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">in Piemonte</div>
+  </div>
+  <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
+    <div style="color: #9fe1cb; font-size: 36px; font-weight: 400;">SCI</div>
+    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">Società Chimica Italiana</div>
+  </div>
+</div>
+
+</div>
 ---
