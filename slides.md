@@ -271,46 +271,6 @@ layout: none
 ---
 
 <div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
-<div class="absolute inset-0" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Politecnico_di_Torino_%28edificio_principale%29.jpg/1280px-Politecnico_di_Torino_%28edificio_principale%29.jpg'); background-size: cover; background-position: center; opacity: 0.2;"></div>
-
-<div class="relative z-10 flex items-center justify-center h-full gap-14" style="padding: 0 64px;">
-
-  <div style="flex: 1; text-align: left;">
-    <div v-motion :initial="{ opacity: 0, x: -20 }" :enter="{ opacity: 1, x: 0, transition: { delay: 100 } }"
-      style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: rgba(159,225,203,0.6); text-transform: uppercase; margin-bottom: 14px;">
-      Politecnico di Torino
-    </div>
-    <h1 v-motion :initial="{ opacity: 0, x: -20 }" :enter="{ opacity: 1, x: 0, transition: { delay: 250 } }"
-      style="font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 400; color: white; line-height: 1.15; margin-bottom: 18px;">
-      Matematica<br><em style="color: #9fe1cb">per l'Ingegneria.</em>
-    </h1>
-    <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 400 } }"
-      style="font-size: 16px; color: rgba(255,255,255,0.5); font-weight: 300; line-height: 1.8; max-width: 340px;">
-      Cinque anni di curiosità convergono qui —<br>dove i problemi diventano progetti.
-    </p>
-  </div>
-
-  <div v-click style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
-    <div v-for="(item, i) in items" :key="i"
-      style="background: rgba(159,225,203,0.06); border: 1px solid rgba(159,225,203,0.18); border-radius: 12px; padding: 14px 20px; text-align: left;">
-      <div style="color: #9fe1cb; font-size: 13px; font-weight: 400; margin-bottom: 3px;">{{ item.title }}</div>
-      <div style="color: rgba(255,255,255,0.4); font-size: 12px; font-weight: 300; line-height: 1.6;">{{ item.desc }}</div>
-    </div>
-  </div>
-
-</div>
-
-<script setup>
-const items = [
-  { title: 'Interdisciplinare',   desc: 'Fisica, chimica, informatica e matematica in un unico percorso.' },
-  { title: 'Problem solving',     desc: 'Cinque anni ad affrontare problemi aperti, non esercizi chiusi.' },
-  { title: 'Progetti concreti',   desc: 'Stazione meteo, Monopoly e altri — github.com/1ilir0lika.' },
-]
-</script>
----
----
-
-<div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
 
 <div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 text-center">
 
@@ -358,3 +318,42 @@ const items = [
 </div>
 
 ---
+---
+
+<div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
+<div class="absolute inset-0" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Politecnico_di_Torino_%28edificio_principale%29.jpg/1280px-Politecnico_di_Torino_%28edificio_principale%29.jpg'); background-size: cover; background-position: center; opacity: 0.2;"></div>
+
+<div class="relative z-10 flex items-center justify-center h-full gap-14" style="padding: 0 64px;">
+
+  <div style="flex: 1; text-align: left;">
+    <div v-motion :initial="{ opacity: 0, x: -20 }" :enter="{ opacity: 1, x: 0, transition: { delay: 100 } }"
+      style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: rgba(159,225,203,0.6); text-transform: uppercase; margin-bottom: 14px;">
+      Politecnico di Torino
+    </div>
+    <h1 v-motion :initial="{ opacity: 0, x: -20 }" :enter="{ opacity: 1, x: 0, transition: { delay: 250 } }"
+      style="font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 400; color: white; line-height: 1.15; margin-bottom: 18px;">
+      Matematica<br><em style="color: #9fe1cb">per l'Ingegneria.</em>
+    </h1>
+    <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 400 } }"
+      style="font-size: 16px; color: rgba(255,255,255,0.5); font-weight: 300; line-height: 1.8; max-width: 340px;">
+      Cinque anni di curiosità convergono qui —<br>dove i problemi diventano progetti.
+    </p>
+  </div>
+
+  <div v-click style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+    <div v-for="(item, i) in items" :key="i"
+      style="background: rgba(159,225,203,0.06); border: 1px solid rgba(159,225,203,0.18); border-radius: 12px; padding: 14px 20px; text-align: left;">
+      <div style="color: #9fe1cb; font-size: 13px; font-weight: 400; margin-bottom: 3px;">{{ item.title }}</div>
+      <div style="color: rgba(255,255,255,0.4); font-size: 12px; font-weight: 300; line-height: 1.6;">{{ item.desc }}</div>
+    </div>
+  </div>
+
+</div>
+
+<script setup>
+const items = [
+  { title: 'Interdisciplinare',   desc: 'Fisica, chimica, informatica e matematica in un unico percorso.' },
+  { title: 'Problem solving',     desc: 'Cinque anni ad affrontare problemi aperti, non esercizi chiusi.' },
+  { title: 'Progetti concreti',   desc: 'Stazione meteo, Monopoly e altri — github.com/1ilir0lika.' },
+]
+</script>
