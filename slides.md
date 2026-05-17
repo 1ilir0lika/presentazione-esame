@@ -187,7 +187,7 @@ onMounted(async () => {
 </script>
 
 ---
----
+
 <div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
 <div class="absolute inset-0" style="background-image: url('https://www.associazionesubalpinamathesis.it/wp-content/uploads/2023/07/MathStage2023.jpg'); background-size: cover; background-position: center; opacity: 0.18;"></div>
 
@@ -205,7 +205,7 @@ onMounted(async () => {
 
 <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 500 } }"
   style="font-size: 17px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.8; max-width: 520px;">
-  Tre giorni intensive lontano dalle aule — problemi, giochi matematici<br>e ricerca personale tra docenti universitari e studenti scelti.
+  Tre giorni intensivi lontano dalle aule — problemi, giochi matematici<br>e ricerca personale tra docenti universitari e studenti scelti.
 </p>
 
 <div v-click style="display: flex; gap: 20px; margin-top: 8px;">
@@ -244,7 +244,7 @@ onMounted(async () => {
 
 <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 500 } }"
   style="font-size: 17px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.8; max-width: 480px;">
-  Selezionato tra i migliori studenti del Piemonte<br>nella competizione nazionale.
+  Svolto la fase regionale dei <br> Giochi della Chimica.
 </p>
 
 <div v-click style="display: flex; gap: 20px; margin-top: 8px;">
@@ -259,6 +259,7 @@ onMounted(async () => {
 </div>
 
 </div>
+
 ---
 layout: none
 ---
@@ -267,7 +268,6 @@ layout: none
 <div class="relative z-10 h-full">
   <ProjectCard />
 </div>
----
 ---
 
 <div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
@@ -296,7 +296,7 @@ layout: none
 <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 500 } }"
   style="font-size: 17px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.8; max-width: 520px;">
   Gestionale per toelettatori nato da un'esigenza concreta.<br>
-  Pagamenti ricorrenti con Stripe, gestione servizi su database,<br>
+  Pagamenti ricorrenti con Stripe,servizi salvati su SupaBase,<br>
   email di invito e reset password.
 </p>
 
@@ -306,18 +306,17 @@ layout: none
     <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">Pagamenti ricorrenti</div>
   </div>
   <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
-    <div style="color: #9fe1cb; font-size: 36px; font-weight: 400;">DB</div>
+    <div style="color: #9fe1cb; font-size: 36px; font-weight: 400;">SupaBase</div>
     <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">Gestione servizi</div>
   </div>
   <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
     <div style="color: #9fe1cb; font-size: 36px; font-weight: 400;">✉</div>
-    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">Email transazionali</div>
+    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">Email automatizzate</div>
   </div>
 </div>
 
 </div>
 
----
 ---
 
 <div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
@@ -353,7 +352,7 @@ layout: none
 <script setup>
 const items = [
   { title: 'Interdisciplinare',   desc: 'Fisica, chimica, informatica e matematica in un unico percorso.' },
-  { title: 'Problem solving',     desc: 'Cinque anni ad affrontare problemi aperti, non esercizi chiusi.' },
-  { title: 'Progetti concreti',   desc: 'Stazione meteo, Monopoly e altri — github.com/1ilir0lika.' },
+  { title: 'Problem solving',     desc: 'Sviluppato durante i 5 anni di scientifico.' },
+  { title: 'Progetti concreti',   desc: 'Stazione meteo, gestionali e altri — github.com/1ilir0lika.' },
 ]
 </script>

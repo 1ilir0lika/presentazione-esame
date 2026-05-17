@@ -3,10 +3,10 @@
     <div class="left">
       <div class="label">Alternanza Scuola-Lavoro · Centro per l'Impiego</div>
       <h1 class="title">Un problema<br><em>reale.</em></h1>
-      <p class="sub">Il Centro per l'Impiego non aveva un sistema per condividere manuali e documenti interni. L'ho costruito io.</p>
+      <p class="sub">Il Centro per l'Impiego non aveva un sistema per condividere manuali e documenti interni. Assieme ad uno studente del PIT l'ho sviluppato in 4 giorni secondo le loro indicazioni</p>
       <div class="cards">
         <div class="card">
-          <div class="card-title">Gestionale documentale</div>
+          <div class="card-title">Gestionale con privilgi diversi per utente</div>
           <div class="card-desc">Admin con scrittura, utenti in sola lettura.</div>
         </div>
         <div class="card">
