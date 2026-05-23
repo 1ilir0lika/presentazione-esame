@@ -261,6 +261,46 @@ onMounted(async () => {
 </div>
 
 ---
+
+<div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
+<div class="absolute inset-0" style="background-image: url('https://i0.wp.com/www.centrostudilivatino.it/wp-content/uploads/2023/04/Marco-Tullio-Cicerone.jpeg?resize=1080%2C675&ssl=1'); background-size: cover; background-position: center; opacity: 0.15;"></div>
+
+<div class="relative z-10 flex flex-col items-center justify-center h-full gap-6 text-center">
+
+<div v-motion :initial="{ opacity: 0, y: -20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
+  style="font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: rgba(159,225,203,0.6); text-transform: uppercase;">
+  Olimpiadi di Debate
+</div>
+
+<h1 v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }"
+  style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; color: white; line-height: 1.1;">
+  <em style="color: #9fe1cb">Debate.</em>
+</h1>
+
+<p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 500 } }"
+  style="font-size: 17px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.8; max-width: 540px;">
+  Non solo scienze — cinque anni in cui ho coltivato<br>
+  senso critico, capacitá argomentative e pensiero umanistico.
+</p>
+
+<div v-click style="display: flex; gap: 20px; margin-top: 8px;">
+  <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
+    <div style="color: #9fe1cb; font-size: 28px; font-weight: 400;">Senso critico</div>
+    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">Analisi e valutazione degli argomenti</div>
+  </div>
+  <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
+    <div style="color: #9fe1cb; font-size: 28px; font-weight: 400;">Argomentare</div>
+    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">Imparare sia gli argomenti pro che contro</div>
+  </div>
+  <div style="background: rgba(159,225,203,0.07); border: 1px solid rgba(159,225,203,0.2); border-radius: 12px; padding: 16px 32px; text-align: center;">
+    <div style="color: #9fe1cb; font-size: 28px; font-weight: 400;">Esposizione</div>
+    <div style="color: rgba(255,255,255,0.35); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;">Imparare ad esporre le proprie idee</div>
+  </div>
+</div>
+
+</div>
+
+---
 layout: none
 ---
 
