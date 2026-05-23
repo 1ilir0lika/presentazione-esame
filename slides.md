@@ -288,10 +288,7 @@ layout: none
   <h1 style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; color: white; line-height: 1.1; margin: 0;">
     <em style="color: #9fe1cb">Grooming Pro.</em>
   </h1>
-</div><h1 v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }"
-  style="font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 400; color: white; line-height: 1.1;">
-  <em style="color: #9fe1cb">Grooming Pro.</em>
-</h1>
+</div>
 
 <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 500 } }"
   style="font-size: 17px; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.8; max-width: 520px;">
