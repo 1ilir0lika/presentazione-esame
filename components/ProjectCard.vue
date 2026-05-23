@@ -6,7 +6,7 @@
       <p class="sub">Il Centro per l'Impiego non aveva un sistema per condividere manuali e documenti interni. Assieme ad uno studente del PIT l'ho sviluppato in 4 giorni secondo le loro indicazioni</p>
       <div class="cards">
         <div class="card">
-          <div class="card-title">Gestionale con privilgi diversi per utente</div>
+          <div class="card-title">Gestionale con privilegi diversi per utente</div>
           <div class="card-desc">Admin con scrittura, utenti in sola lettura.</div>
         </div>
         <div class="card">
