@@ -8,9 +8,25 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^52.15.2",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "^0.25.0",
     "vue": "^3.5.33"
-  }
+  },
+  "version": "1.0.0",
+  "description": "To start the slide show:",
+  "main": "index.js",
+  "devDependencies": {
+    "@slidev/cli": "^52.16.0",
+    "@slidev/theme-seriph": "^0.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ilir0lika/presentazione-esame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1ilir0lika/presentazione-esame/issues"
+  },
+  "homepage": "https://github.com/1ilir0lika/presentazione-esame#readme"
 }

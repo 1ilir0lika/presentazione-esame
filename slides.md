@@ -146,12 +146,35 @@ onMounted(async () => {
 <div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
 <div class="absolute inset-0" style="background-image: url('https://res.cloudinary.com/duwryivn5/image/upload/v1781172577/bg_nzaten.png'); background-size: cover; background-position: center; opacity: 0.15;"></div>
 
+<!-- MODAL -->
+<div v-if="open"
+  @click.stop
+  style="position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center;">
+
+  <button @click.stop="open = false"
+    style="position: absolute; top: 5vh; right: 6vw; z-index: 1010; background: rgba(0,0,0,0.8); border: 2px solid #9fe1cb; color: #9fe1cb; width: 42px; height: 42px; border-radius: 50%; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+    ✕
+  </button>
+
+  <div style="position: relative; width: 90vw; height: 85vh; border-radius: 16px; overflow: hidden; border: 1px solid rgba(159,225,203,0.3);">
+    <iframe src="https://1ilir0lika.github.io/monopoly/" style="width: 100%; height: 100%; border: none;" />
+  </div>
+
+</div>
+
 <div class="relative z-10 flex items-center justify-center h-full gap-12" style="padding: 0 60px;">
 
   <div v-motion :initial="{ opacity: 0, x: -20 }" :enter="{ opacity: 1, x: 0, transition: { delay: 350 } }"
-    style="flex: 1; border-radius: 14px; overflow: hidden; border: 1px solid rgba(159,225,203,0.2);">
+    style="flex: 1; border-radius: 14px; overflow: hidden; border: 1px solid rgba(159,225,203,0.2); cursor: pointer; position: relative;"
+    @click="open = true">
     <img src="https://res.cloudinary.com/duwryivn5/image/upload/v1781172577/bg_nzaten.png"
       style="width: 100%; height: 320px; object-fit: cover; display: block;" />
+    <!-- play overlay -->
+    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center;">
+      <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(159,225,203,0.15); border: 2px solid rgba(159,225,203,0.6); display: flex; align-items: center; justify-content: center;">
+        <span style="color: #9fe1cb; font-size: 22px; margin-left: 4px;">▶</span>
+      </div>
+    </div>
   </div>
 
   <div style="flex: 1; text-align: left;">
@@ -165,7 +188,7 @@ onMounted(async () => {
     </h1>
     <p v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 450 } }"
       style="font-size: 16px; color: rgba(255,255,255,0.5); font-weight: 300; line-height: 1.8; max-width: 340px;">
-      {{ repo.desc || 'Implementazione digitale del gioco da tavolo finalizzato ad un\'attivitá di educazione civica ' }}
+      {{ repo.desc || 'Implementazione digitale del gioco da tavolo finalizzato ad un\'attivitá di educazione civica' }}
     </p>
     <div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 600 } }"
       style="margin-top: 18px; display: flex; gap: 10px;">
@@ -177,6 +200,7 @@ onMounted(async () => {
 
 <script setup>
 import { ref, onMounted } from 'vue'
+const open = ref(false)
 const repo = ref({ lang: '…', desc: '' })
 onMounted(async () => {
   try {
