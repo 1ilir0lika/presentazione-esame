@@ -124,7 +124,7 @@ onMounted(async () => {
 
   <div v-motion :initial="{ opacity: 0, x: 20 }" :enter="{ opacity: 1, x: 0, transition: { delay: 350 } }"
     style="flex: 1; border-radius: 14px; overflow: hidden; border: 1px solid rgba(159,225,203,0.2);">
-    <img src="https://akwqxpfehnmzgjeygwka.supabase.co/storage/v1/object/public/esame/esp.jpg"
+    <img src="https://collection.cloudinary.com/duwryivn5/https://collection.cloudinary.com/duwryivn5/0a06496c15dd8fe56888258f03e0c267"
       style="width: 100%; height: 320px; object-fit: cover; display: block;" />
   </div>
 
@@ -144,13 +144,13 @@ onMounted(async () => {
 ---
 
 <div class="absolute inset-0" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)"></div>
-<div class="absolute inset-0" style="background-image: url('https://akwqxpfehnmzgjeygwka.supabase.co/storage/v1/object/public/esame/bg.png'); background-size: cover; background-position: center; opacity: 0.15;"></div>
+<div class="absolute inset-0" style="background-image: url('https://collection.cloudinary.com/duwryivn5/932331979b734635eb82641c0afefd09'); background-size: cover; background-position: center; opacity: 0.15;"></div>
 
 <div class="relative z-10 flex items-center justify-center h-full gap-12" style="padding: 0 60px;">
 
   <div v-motion :initial="{ opacity: 0, x: -20 }" :enter="{ opacity: 1, x: 0, transition: { delay: 350 } }"
     style="flex: 1; border-radius: 14px; overflow: hidden; border: 1px solid rgba(159,225,203,0.2);">
-    <img src="https://akwqxpfehnmzgjeygwka.supabase.co/storage/v1/object/public/esame/bg.png"
+    <img src="https://collection.cloudinary.com/duwryivn5/932331979b734635eb82641c0afefd09"
       style="width: 100%; height: 320px; object-fit: cover; display: block;" />
   </div>
 
